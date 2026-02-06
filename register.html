@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qeydiyyat — OneYouth</title>
+    <meta name="description" content="OneYouth tədbirlərinə qeydiyyatdan keçin və gənclər platformasının bir hissəsi olun">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <nav class="nav scrolled" id="mainNav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <svg class="brand-icon" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                    <path d="M15 15L25 25M25 15L15 25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span class="brand-text">ONE<span class="brand-highlight">YOUTH</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-item" data-nav-item>Əsas</a>
+                <a href="about.html" class="nav-item" data-nav-item>Haqqımızda</a>
+                <a href="services.html" class="nav-item" data-nav-item>Xidmətlər</a>
+                <a href="events.html" class="nav-item" data-nav-item>Tədbirlər</a>
+                <a href="partners.html" class="nav-item" data-nav-item>Tərəfdaşlar</a>
+                <a href="contact.html" class="nav-item" data-nav-item>Əlaqə</a>
+            </div>
+            <button class="nav-cta" onclick="window.location.href='register.html'">
+                <span>Qoşul</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+    <section class="page-hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="grid-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="section-label" data-animate>
+                <span class="label-line"></span>
+                <span>QEYDİYYAT</span>
+            </div>
+            <h1 class="page-title" data-animate>
+                Tədbirə <span class="gradient-text">qoşul</span>
+            </h1>
+            <p class="page-subtitle" data-animate>
+                Formunu doldur və OneYouth ailəsinin bir hissəsi ol
+            </p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <form class="contact-form" id="registerForm" data-animate style="padding: 48px; background: var(--bg-card); border: 1px solid var(--glass-border); border-radius: 24px;">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="fullname">Ad Soyad *</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="Məsələn: Əli Məmmədov">
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Telefon *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+994 XX XXX XX XX">
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="email@example.com">
+                </div>
+                <div class="form-field">
+                    <label for="event">Tədbir seçimi *</label>
+                    <select id="event" name="event" required style="padding: 16px 20px; background: var(--bg-secondary); border: 1px solid var(--glass-border); border-radius: 12px; color: var(--text-primary); font-family: var(--font-body); font-size: 16px; width: 100%;">
+                        <option value="">Tədbir seçin</option>
+                        <option value="futbol-kuboku-2026">OneYouth Futbol Kuboku 2026</option>
+                        <option value="cs2-championship">CS2 Championship</option>
+                        <option value="genc-liderler-zirvesi">Gənc Liderlər Zirvəsi</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="team">Komanda adı (əgər varsa)</label>
+                    <input type="text" id="team" name="team" placeholder="Komanda adınız">
+                </div>
+                <div class="form-field">
+                    <label for="note">Əlavə qeyd</label>
+                    <textarea id="note" name="note" rows="4" placeholder="Bizə bildirmək istədiyiniz bir şey varsa..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    <span>Qeydiyyatı tamamla</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <svg class="brand-icon" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M15 15L25 25M25 15L15 25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="brand-text">ONE<span class="brand-highlight">YOUTH</span></span>
+                    </div>
+                    <p class="footer-tagline">Gənclərin enerjisi, gələcəyin qüdrəti</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Naviqasiya</h4>
+                        <ul>
+                            <li><a href="index.html">Əsas</a></li>
+                            <li><a href="about.html">Haqqımızda</a></li>
+                            <li><a href="services.html">Xidmətlər</a></li>
+                            <li><a href="events.html">Tədbirlər</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Əlaqə</h4>
+                        <ul>
+                            <li><a href="mailto:info@oneyouth.az">info@oneyouth.az</a></li>
+                            <li><a href="tel:+994501234567">+994 50 123 45 67</a></li>
+                            <li><a href="contact.html">Əlaqə Formu</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Sosial Media</h4>
+                        <ul>
+                            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                            <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
+                            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OneYouth. Bütün hüquqlar qorunur.</p>
+                <p>Made with 💙 in Baku</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    // Prefill event from URL query parameter
+    document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const eventParam = urlParams.get('event');
+        const eventSelect = document.getElementById('event');
+        
+        if (eventParam && eventSelect) {
+            eventSelect.value = eventParam;
+        }
+        
+        // Handle registration form submission
+        const registerForm = document.getElementById('registerForm');
+        if (registerForm) {
+            registerForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(registerForm);
+                const data = Object.fromEntries(formData);
+                
+                console.log('Qeydiyyat məlumatları:', data);
+                
+                // Show success notification
+                const notification = document.createElement('div');
+                notification.style.cssText = `
+                    position: fixed;
+                    bottom: 32px;
+                    right: 32px;
+                    padding: 24px 32px;
+                    background: linear-gradient(135deg, #FF1744, #D50000);
+                    color: white;
+                    border-radius: 16px;
+                    box-shadow: 0 8px 24px rgba(255, 23, 68, 0.5);
+                    z-index: 10000;
+                    font-weight: 600;
+                    font-size: 16px;
+                    animation: slideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                `;
+                notification.innerHTML = `
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Qeydiyyatınız uğurla tamamlandı!</span>
+                    </div>
+                `;
+                
+                document.body.appendChild(notification);
+                
+                registerForm.reset();
+                
+                setTimeout(() => {
+                    notification.style.animation = 'slideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) reverse';
+                    setTimeout(() => notification.remove(), 400);
+                }, 3500);
+            });
+        }
+    });
+    </script>
+</body>
+</html>

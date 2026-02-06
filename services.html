@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xidmətlərimiz — OneYouth</title>
+    <meta name="description" content="OneYouth xidmətləri: İdman, esports, networking, festival və sosial layihələr">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <nav class="nav scrolled" id="mainNav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <svg class="brand-icon" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                    <path d="M15 15L25 25M25 15L15 25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span class="brand-text">ONE<span class="brand-highlight">YOUTH</span></span>
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-item" data-nav-item>Əsas</a>
+                <a href="about.html" class="nav-item" data-nav-item>Haqqımızda</a>
+                <a href="services.html" class="nav-item active" data-nav-item>Xidmətlər</a>
+                <a href="events.html" class="nav-item" data-nav-item>Tədbirlər</a>
+                <a href="partners.html" class="nav-item" data-nav-item>Tərəfdaşlar</a>
+                <a href="contact.html" class="nav-item" data-nav-item>Əlaqə</a>
+            </div>
+
+            <button class="nav-cta" onclick="window.location.href='register.html'">
+                <span>Qoşul</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="grid-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="section-label" data-animate>
+                <span class="label-line"></span>
+                <span>XİDMƏTLƏRİMİZ</span>
+            </div>
+            <h1 class="page-title" data-animate>
+                Fəaliyyət <span class="gradient-text">sahələrimiz</span>
+            </h1>
+            <p class="page-subtitle" data-animate>
+                Gənclər üçün müxtəlif sahələrdə keyfiyyətli tədbirlər təşkil edirik
+            </p>
+        </div>
+    </section>
+
+    <section class="services section">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card" data-animate>
+                    <div class="card-number">01</div>
+                    <div class="card-icon">⚽</div>
+                    <h3 class="card-title">İdman Turnirləri</h3>
+                    <p class="card-text">Futbol, basketbol və digər idman növləri üzrə peşəkar turnir təşkilatçılığı</p>
+                    <div class="card-tags">
+                        <span class="tag">Futbol</span>
+                        <span class="tag">Basketbol</span>
+                        <span class="tag">Voleybol</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-animate>
+                    <div class="card-number">02</div>
+                    <div class="card-icon">🎮</div>
+                    <h3 class="card-title">Esports Yarışları</h3>
+                    <p class="card-text">CS2, Valorant, Dota 2 və digər oyunlar üzrə mükafatlı turnir təşkilatı</p>
+                    <div class="card-tags">
+                        <span class="tag">CS2</span>
+                        <span class="tag">Valorant</span>
+                        <span class="tag">Dota 2</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-animate>
+                    <div class="card-number">03</div>
+                    <div class="card-icon">🤝</div>
+                    <h3 class="card-title">Networking Tədbirləri</h3>
+                    <p class="card-text">Gənclərin tanışlıq, fikir mübadiləsi və əməkdaşlıq imkanları yaradan görüşlər</p>
+                    <div class="card-tags">
+                        <span class="tag">Meetup</span>
+                        <span class="tag">Workshop</span>
+                        <span class="tag">Panel</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-animate>
+                    <div class="card-number">04</div>
+                    <div class="card-icon">🎪</div>
+                    <h3 class="card-title">Festival və Konsertlər</h3>
+                    <p class="card-text">Gəncləri bir araya gətirən musiqi və mədəniyyət tədbirləri</p>
+                    <div class="card-tags">
+                        <span class="tag">Festival</span>
+                        <span class="tag">Konsert</span>
+                        <span class="tag">Party</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-animate>
+                    <div class="card-number">05</div>
+                    <div class="card-icon">💡</div>
+                    <h3 class="card-title">Sosial Layihələr</h3>
+                    <p class="card-text">Könüllülük, təhsil və gənc sahibkarlıq dəstəyi layihələri</p>
+                    <div class="card-tags">
+                        <span class="tag">Könüllülük</span>
+                        <span class="tag">Təhsil</span>
+                        <span class="tag">Startup</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-animate>
+                    <div class="card-number">06</div>
+                    <div class="card-icon">📸</div>
+                    <h3 class="card-title">Media Xidmətləri</h3>
+                    <p class="card-text">Peşəkar foto/video çəkilişi və sosial media idarəetməsi</p>
+                    <div class="card-tags">
+                        <span class="tag">Foto</span>
+                        <span class="tag">Video</span>
+                        <span class="tag">SMM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="cta-box" data-animate>
+                <h2>Tədbirlərimizə qoşul</h2>
+                <p>Yaxınlaşan tədbirlərimizə bax və indi qeydiyyatdan keç</p>
+                <a href="events.html" class="btn btn-primary" style="margin-top: 24px;">
+                    <span>Tədbirlərə bax</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <svg class="brand-icon" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M15 15L25 25M25 15L15 25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="brand-text">ONE<span class="brand-highlight">YOUTH</span></span>
+                    </div>
+                    <p class="footer-tagline">Gənclərin enerjisi, gələcəyin qüdrəti</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Naviqasiya</h4>
+                        <ul>
+                            <li><a href="index.html">Əsas</a></li>
+                            <li><a href="about.html">Haqqımızda</a></li>
+                            <li><a href="services.html">Xidmətlər</a></li>
+                            <li><a href="events.html">Tədbirlər</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Əlaqə</h4>
+                        <ul>
+                            <li><a href="mailto:info@oneyouth.az">info@oneyouth.az</a></li>
+                            <li><a href="tel:+994501234567">+994 50 123 45 67</a></li>
+                            <li><a href="contact.html">Əlaqə Formu</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Sosial Media</h4>
+                        <ul>
+                            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                            <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
+                            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OneYouth. Bütün hüquqlar qorunur.</p>
+                <p>Made with 💙 in Baku</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

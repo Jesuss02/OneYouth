@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneYouth — Gənclər Platforması | Bakı, Azərbaycan</title>
+    <meta name="description" content="OneYouth — Azərbaycanda ən böyük gənclər tədbir platforması. İdman, esports, networking və sosial layihələr.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor Effect -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="mainNav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <svg class="brand-icon" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+                    <path d="M15 15L25 25M25 15L15 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <span class="brand-text">ONE<span class="brand-highlight">YOUTH</span></span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-item active" data-nav-item>Əsas</a>
+                <a href="about.html" class="nav-item" data-nav-item>Haqqımızda</a>
+                <a href="services.html" class="nav-item" data-nav-item>Xidmətlər</a>
+                <a href="events.html" class="nav-item" data-nav-item>Tədbirlər</a>
+                <a href="partners.html" class="nav-item" data-nav-item>Tərəfdaşlar</a>
+                <a href="contact.html" class="nav-item" data-nav-item>Əlaqə</a>
+            </div>
+
+            <button class="nav-cta" onclick="window.location.href='register.html'">
+                <span>Qoşul</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="grid-pattern"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-badge" data-animate>
+                <span class="badge-dot"></span>
+                <span>Azərbaycanda #1 Gənclər Platforması</span>
+            </div>
+
+            <h1 class="hero-title" data-animate>
+                <span class="title-word">GƏNCLƏRİN</span>
+                <span class="title-word">ENERJİSİNİ</span>
+                <span class="title-word gradient-text">AZAD EDİN</span>
+            </h1>
+
+            <p class="hero-description" data-animate>
+                İdman turnirlərindən esports yarışlarına, networking tədbirlərindən sosial layihələrə — OneYouth gənclərin bir araya gəldiyi, inkişaf etdiyi və uğur qazandığı platformadır.
+            </p>
+
+            <div class="hero-actions" data-animate>
+                <a href="events.html" class="btn btn-primary">
+                    <span>Tədbirlərə bax</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="about.html" class="btn btn-secondary">
+                    <span>Daha ətraflı</span>
+                </a>
+            </div>
+
+            <div class="hero-stats" data-animate>
+                <div class="stat">
+                    <div class="stat-value" data-count="750">0</div>
+                    <div class="stat-label">İştirakçı</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-value" data-count="85">0</div>
+                    <div class="stat-label">Tədbir</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-value" data-count="40">0</div>
+                    <div class="stat-label">Tərəfdaş</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-hint" data-animate>
+            <span>Aşağı davam et</span>
+            <div class="scroll-indicator">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-label" data-animate>
+                <span class="label-line"></span>
+                <span>BİZ KİMİK</span>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content" data-animate>
+                    <h2 class="section-heading">
+                        Gənclərin potensialını <span class="gradient-text">həyata keçirən</span> platform
+                    </h2>
+                    <p class="lead-text">
+                        OneYouth — sadəcə tədbir platforması deyil, Azərbaycan gənclərinin enerji, yaradıcılıq və liderlik potensialını ortaya çıxaran hərəkatdır.
+                    </p>
+                    <p>
+                        2024-cü ildən fəaliyyətə başlayan platformamız, idman turnirlərindən esports yarışlarına, networking görüşlərindən sosial layihələrə qədər geniş spektrdə yüksək keyfiyyətli tədbirlər təşkil edir.
+                    </p>
+                </div>
+
+                <div class="about-features">
+                    <div class="feature-item" data-animate>
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 4L4 10L16 16L28 10L16 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4 22L16 28L28 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4 16L16 22L28 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Missiyamız</h3>
+                            <p>Azərbaycan gənclərini bir araya gətirərək onların şəxsi və peşəkar inkişafına töhfə vermək</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item" data-animate>
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 4L20 12L28 14L22 20L24 28L16 24L8 28L10 20L4 14L12 12L16 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Vizyonumuz</h3>
+                            <p>Cənubi Qafqazın ən böyük və təsirli gənclər platformasına çevrilmək</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item" data-animate>
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <circle cx="16" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                                <path d="M10 28V26C10 23.7909 11.7909 22 14 22H18C20.2091 22 22 23.7909 22 26V28" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Dəyərlərimiz</h3>
+                            <p>Şəffaflıq, keyfiyyət, innovasiya və gənclərin səsini eşitmək</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label" data-animate>
+                    <span class="label-line"></span>
+                    <span>NƏ EDİRİK</span>
+                </div>
+                <h2 class="section-heading" data-animate>
+                    Fəaliyyət <span class="gradient-text">sahələrimiz</span>
+                </h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-animate>
+                    <div class="card-number">01</div>
+                    <div class="card-icon">⚽</div>
+                    <h3 class="card-title">İdman Turnirləri</h3>
+                    <p class="card-text">Futbol, basketbol və digər idman növləri üzrə peşəkar turnir təşkilatçılığı</p>
+                    <div class="card-tags">
+                        <span class="tag">Futbol</span>
+                        <span class="tag">Basketbol</span>
+                        <span class="tag">Voleybol</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-animate>
+                    <div class="card-number">02</div>
+                    <div class="card-icon">🎮</div>
+                    <h3 class="card-title">Esports Yarışları</h3>
+                    <p class="card-text">CS2, Valorant, Dota 2 və digər oyunlar üzrə mükafatlı turnir təşkilatı</p>
+                    <div class="card-tags">
+                        <span class="tag">CS2</span>
+                        <span class="tag">Valorant</span>
+                        <span class="tag">Dota 2</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-animate>
+                    <div class="card-number">03</div>
+                    <div class="card-icon">🤝</div>
+                    <h3 class="card-title">Networking Tədbirləri</h3>
+                    <p class="card-text">Gənclərin tanışlıq, fikir mübadiləsi və əməkdaşlıq imkanları yaradan görüşlər</p>
+                    <div class="card-tags">
+                        <span class="tag">Meetup</span>
+                        <span class="tag">Workshop</span>
+                        <span class="tag">Panel</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-animate>
+                    <div class="card-number">04</div>
+                    <div class="card-icon">🎪</div>
+                    <h3 class="card-title">Festival və Konsertlər</h3>
+                    <p class="card-text">Gəncləri bir araya gətirən musiqi və mədəniyyət tədbirləri</p>
+                    <div class="card-tags">
+                        <span class="tag">Festival</span>
+                        <span class="tag">Konsert</span>
+                        <span class="tag">Party</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-animate>
+                    <div class="card-number">05</div>
+                    <div class="card-icon">💡</div>
+                    <h3 class="card-title">Sosial Layihələr</h3>
+                    <p class="card-text">Könüllülük, təhsil və gənc sahibkarlıq dəstəyi layihələri</p>
+                    <div class="card-tags">
+                        <span class="tag">Könüllülük</span>
+                        <span class="tag">Təhsil</span>
+                        <span class="tag">Startup</span>
+                    </div>
+                </div>
+
+                <div class="service-card" data-animate>
+                    <div class="card-number">06</div>
+                    <div class="card-icon">📸</div>
+                    <h3 class="card-title">Media Xidmətləri</h3>
+                    <p class="card-text">Peşəkar foto/video çəkilişi və sosial media idarəetməsi</p>
+                    <div class="card-tags">
+                        <span class="tag">Foto</span>
+                        <span class="tag">Video</span>
+                        <span class="tag">SMM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events section" id="events">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label" data-animate>
+                    <span class="label-line"></span>
+                    <span>YAXINLAŞAN</span>
+                </div>
+                <h2 class="section-heading" data-animate>
+                    Növbəti <span class="gradient-text">tədbirlər</span>
+                </h2>
+            </div>
+
+            <div class="events-grid">
+                <article class="event-card featured" data-animate>
+                    <div class="event-status">
+                        <span class="status-dot"></span>
+                        <span>Qeydiyyat açıqdır</span>
+                    </div>
+                    <div class="event-visual">
+                        <div class="visual-gradient"></div>
+                        <div class="visual-pattern"></div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <time datetime="2026-02-15">15 Fevral 2026</time>
+                            <span class="event-category">İdman</span>
+                        </div>
+                        <h3 class="event-title">OneYouth Futbol Kuboku 2026</h3>
+                        <p class="event-desc">8 komanda, 3 gün mübarizə, 15.000 AZN mükafat fondu. Bakının ən böyük futbol turniri.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L11 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                <span>3 gün</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 9C9.10457 9 10 8.10457 10 7C10 5.89543 9.10457 5 8 5C6.89543 5 6 5.89543 6 7C6 8.10457 6.89543 9 8 9Z" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 14C10.2091 14 12 12.2091 12 10C12 7.79086 10.2091 6 8 6C5.79086 6 4 7.79086 4 10C4 12.2091 5.79086 14 8 14Z" stroke="currentColor" stroke-width="1.5" />
+                                </svg>
+                                <span>Olimpiya Stadion</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7Z" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M2 13C2 10.7909 3.79086 9 6 9H10C12.2091 9 14 10.7909 14 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                <span>128 iştirakçı</span>
+                            </div>
+                        </div>
+                        <a href="register.html?event=futbol-kuboku-2026" class="btn btn-primary btn-small">
+                            <span>Qeydiyyatdan keç</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="event-card" data-animate>
+                    <div class="event-status">
+                        <span class="status-dot"></span>
+                        <span>Tezliklə</span>
+                    </div>
+                    <div class="event-visual">
+                        <div class="visual-gradient secondary"></div>
+                        <div class="visual-pattern"></div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <time datetime="2026-02-22">22 Fevral 2026</time>
+                            <span class="event-category">Esports</span>
+                        </div>
+                        <h3 class="event-title">CS2 Championship</h3>
+                        <p class="event-desc">16 komanda, 8.000 AZN mükafat fondu, canlı yayım.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M8 4V8L11 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                <span>2 gün</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7Z" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M2 13C2 10.7909 3.79086 9 6 9H10C12.2091 9 14 10.7909 14 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                <span>80 iştirakçı</span>
+                            </div>
+                        </div>
+                        <a href="event-cs2-championship.html" class="btn btn-outline btn-small">
+                            <span>Ətraflı</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="event-card" data-animate>
+                    <div class="event-status upcoming">
+                        <span class="status-dot"></span>
+                        <span>Mart</span>
+                    </div>
+                    <div class="event-visual">
+                        <div class="visual-gradient tertiary"></div>
+                        <div class="visual-pattern"></div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <time datetime="2026-03-08">8 Mart 2026</time>
+                            <span class="event-category">Networking</span>
+                        </div>
+                        <h3 class="event-title">Gənc Liderlər Zirvəsi</h3>
+                        <p class="event-desc">Gənc sahibkarlar və liderlərin görüşü, panel diskussiyalar.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7Z" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M2 13C2 10.7909 3.79086 9 6 9H10C12.2091 9 14 10.7909 14 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                <span>60 iştirakçı</span>
+                            </div>
+                        </div>
+                        <a href="event-genc-liderler-zirvesi.html" class="btn btn-outline btn-small">
+                            <span>Ətraflı</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners section" id="partners">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label" data-animate>
+                    <span class="label-line"></span>
+                    <span>BİZİMLƏ İŞLƏYƏNLƏR</span>
+                </div>
+                <h2 class="section-heading" data-animate>
+                    Tərəfdaşlar və <span class="gradient-text">sponsorlar</span>
+                </h2>
+            </div>
+
+            <div class="partners-grid" data-animate>
+                <div class="partner-item">
+                    <div class="partner-logo">SPONSOR</div>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">SPONSOR</div>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">SPONSOR</div>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">SPONSOR</div>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">SPONSOR</div>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">SPONSOR</div>
+                </div>
+            </div>
+
+            <div class="partnership-cta" data-animate>
+                <div class="cta-content">
+                    <h3>Tərəfdaş olmaq istəyirsiniz?</h3>
+                    <p>Brendinizi minlərlə gəncə tanıdın və gələcəyə investisiya qoyun</p>
+                    <a href="contact.html" class="btn btn-primary">
+                        <span>Əlaqə saxlayın</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Events Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label" data-animate>
+                    <span class="label-line"></span>
+                    <span>SON TƏDBİRLƏR</span>
+                </div>
+                <h2 class="section-heading" data-animate>
+                    Uğurla başa çatdırdığımız <span class="gradient-text">tədbirlər</span>
+                </h2>
+            </div>
+
+            <div class="events-grid">
+                <article class="event-card" data-animate>
+                    <div class="event-visual" style="background: linear-gradient(135deg, rgba(255, 23, 68, 0.9), rgba(168, 85, 247, 0.8)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect fill=%22%23333%22 width=%22100%22 height=%22100%22/><text x=%2250%25%22 y=%2250%25%22 font-size=%2216%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23fff%22>⚽ FUTBOL</text></svg>'); background-size: cover; background-position: center;">
+                        <div class="visual-gradient"></div>
+                        <div class="visual-pattern"></div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <time datetime="2024-11-20">20 Noyabr 2024</time>
+                            <span class="event-category">İdman</span>
+                        </div>
+                        <h3 class="event-title">OneYouth Mini Futbol Kuboku</h3>
+                        <p class="event-desc">8 komanda arasında keçirilən intensiv turnir. Rəqabət yüksək, enerji sonsuz idi. Final oyunu 3:2 hesabı ilə dramatik şəkildə başa çatdı.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7Z" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M2 13C2 10.7909 3.79086 9 6 9H10C12.2091 9 14 10.7909 14 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                <span>96 iştirakçı · Bakı · İdman</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card" data-animate>
+                    <div class="event-visual" style="background: linear-gradient(135deg, rgba(0, 229, 255, 0.9), rgba(213, 0, 249, 0.8)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect fill=%22%23222%22 width=%22100%22 height=%22100%22/><text x=%2250%25%22 y=%2250%25%22 font-size=%2216%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23fff%22>🎮 ESPORTS</text></svg>'); background-size: cover; background-position: center;">
+                        <div class="visual-gradient secondary"></div>
+                        <div class="visual-pattern"></div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <time datetime="2024-12-15">15 Dekabr 2024</time>
+                            <span class="event-category">Esports</span>
+                        </div>
+                        <h3 class="event-title">CS2 Open Tournament</h3>
+                        <p class="event-desc">12 komanda, 2 gün mübarizə və peşəkar səviyyədə canlı yayım. Arena dolmuşdu, hər raund nəfəs kəsirdi.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7Z" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M2 13C2 10.7909 3.79086 9 6 9H10C12.2091 9 14 10.7909 14 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                <span>60 iştirakçı · 28 Mall · Esports</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card" data-animate>
+                    <div class="event-visual" style="background: linear-gradient(135deg, rgba(213, 0, 249, 0.9), rgba(255, 23, 68, 0.8)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect fill=%22%23111%22 width=%22100%22 height=%22100%22/><text x=%2250%25%22 y=%2250%25%22 font-size=%2216%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23fff%22>🤝 NETWORK</text></svg>'); background-size: cover; background-position: center;">
+                        <div class="visual-gradient tertiary"></div>
+                        <div class="visual-pattern"></div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <time datetime="2025-01-10">10 Yanvar 2025</time>
+                            <span class="event-category">Networking</span>
+                        </div>
+                        <h3 class="event-title">Gənclər Networking Meetup</h3>
+                        <p class="event-desc">Gənc sahibkarlar, tələbələr və yaradıcıların söhbət və tanışlıq axşamı. Atmosfer səmimi, əlaqələr real idi.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7Z" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M2 13C2 10.7909 3.79086 9 6 9H10C12.2091 9 14 10.7909 14 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                <span>45 iştirakçı · Impact Hub · Networking</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="events-cta" style="margin-top: 48px;">
+                <a href="events.html" class="btn btn-primary-large">Bütün tədbirlərə bax</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <svg class="brand-icon" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+                            <path d="M15 15L25 25M25 15L15 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        <span class="brand-text">ONE<span class="brand-highlight">YOUTH</span></span>
+                    </div>
+                    <p class="footer-tagline">Gənclərin enerjisi, gələcəyin qüdrəti</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Naviqasiya</h4>
+                        <ul>
+                            <li><a href="index.html">Əsas</a></li>
+                            <li><a href="about.html">Haqqımızda</a></li>
+                            <li><a href="services.html">Xidmətlər</a></li>
+                            <li><a href="events.html">Tədbirlər</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Əlaqə</h4>
+                        <ul>
+                            <li><a href="mailto:info@oneyouth.az">info@oneyouth.az</a></li>
+                            <li><a href="tel:+994501234567">+994 50 123 45 67</a></li>
+                            <li><a href="contact.html">Əlaqə Formu</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Sosial Media</h4>
+                        <ul>
+                            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                            <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
+                            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 OneYouth. Bütün hüquqlar qorunur.</p>
+                <p>Made with 💙 in Baku</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

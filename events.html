@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tədbirlər — OneYouth</title>
+    <meta name="description" content="OneYouth tədbirləri - Futbol, esports, networking və digər gənclər tədbirləri">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <nav class="nav scrolled" id="mainNav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <svg class="brand-icon" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                    <path d="M15 15L25 25M25 15L15 25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span class="brand-text">ONE<span class="brand-highlight">YOUTH</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-item" data-nav-item>Əsas</a>
+                <a href="about.html" class="nav-item" data-nav-item>Haqqımızda</a>
+                <a href="services.html" class="nav-item" data-nav-item>Xidmətlər</a>
+                <a href="events.html" class="nav-item active" data-nav-item>Tədbirlər</a>
+                <a href="partners.html" class="nav-item" data-nav-item>Tərəfdaşlar</a>
+                <a href="contact.html" class="nav-item" data-nav-item>Əlaqə</a>
+            </div>
+            <button class="nav-cta" onclick="window.location.href='register.html'">
+                <span>Qoşul</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+    <section class="page-hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="grid-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="section-label" data-animate>
+                <span class="label-line"></span>
+                <span>TƏDBİRLƏR</span>
+            </div>
+            <h1 class="page-title" data-animate>
+                Yaxınlaşan <span class="gradient-text">tədbirlərimiz</span>
+            </h1>
+            <p class="page-subtitle" data-animate>
+                Növbəti tədbirlərimizə qoşul və unutulmaz anlar yaşa
+            </p>
+        </div>
+    </section>
+    <section class="events section">
+        <div class="container">
+            <div class="events-grid">
+                <article class="event-card featured" data-animate>
+                    <div class="event-status">
+                        <span class="status-dot"></span>
+                        <span>Qeydiyyat açıqdır</span>
+                    </div>
+                    <div class="event-visual">
+                        <div class="visual-gradient"></div>
+                        <div class="visual-pattern"></div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <time datetime="2026-02-15">15 Fevral 2026</time>
+                            <span class="event-category">İdman</span>
+                        </div>
+                        <h3 class="event-title">OneYouth Futbol Kuboku 2026</h3>
+                        <p class="event-desc">8 komanda, 3 gün mübarizə, 15.000 AZN mükafat fondu. Bakının ən böyük futbol turniri.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M8 4V8L11 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>3 gün</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 9C9.10457 9 10 8.10457 10 7C10 5.89543 9.10457 5 8 5C6.89543 5 6 5.89543 6 7C6 8.10457 6.89543 9 8 9Z" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M8 14C10.2091 14 12 12.2091 12 10C12 7.79086 10.2091 6 8 6C5.79086 6 4 7.79086 4 10C4 12.2091 5.79086 14 8 14Z" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                                <span>Olimpiya Stadion</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7Z" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M2 13C2 10.7909 3.79086 9 6 9H10C12.2091 9 14 10.7909 14 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>128 iştirakçı</span>
+                            </div>
+                        </div>
+                        <a href="event-futbol-kuboku-2026.html" class="btn btn-primary btn-small">
+                            <span>Ətraflı</span>
+                        </a>
+                    </div>
+                </article>
+                <article class="event-card" data-animate>
+                    <div class="event-status">
+                        <span class="status-dot"></span>
+                        <span>Tezliklə</span>
+                    </div>
+                    <div class="event-visual">
+                        <div class="visual-gradient secondary"></div>
+                        <div class="visual-pattern"></div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <time datetime="2026-02-22">22 Fevral 2026</time>
+                            <span class="event-category">Esports</span>
+                        </div>
+                        <h3 class="event-title">CS2 Championship</h3>
+                        <p class="event-desc">16 komanda, 8.000 AZN mükafat fondu, canlı yayım.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M8 4V8L11 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>2 gün</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7Z" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M2 13C2 10.7909 3.79086 9 6 9H10C12.2091 9 14 10.7909 14 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>80 iştirakçı</span>
+                            </div>
+                        </div>
+                        <a href="event-cs2-championship.html" class="btn btn-outline btn-small">
+                            <span>Ətraflı</span>
+                        </a>
+                    </div>
+                </article>
+                <article class="event-card" data-animate>
+                    <div class="event-status upcoming">
+                        <span class="status-dot"></span>
+                        <span>Mart</span>
+                    </div>
+                    <div class="event-visual">
+                        <div class="visual-gradient tertiary"></div>
+                        <div class="visual-pattern"></div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <time datetime="2026-03-08">8 Mart 2026</time>
+                            <span class="event-category">Networking</span>
+                        </div>
+                        <h3 class="event-title">Gənc Liderlər Zirvəsi</h3>
+                        <p class="event-desc">Gənc sahibkarlar və liderlərin görüşü, panel diskussiyalar.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7Z" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M2 13C2 10.7909 3.79086 9 6 9H10C12.2091 9 14 10.7909 14 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>60 iştirakçı</span>
+                            </div>
+                        </div>
+                        <a href="event-genc-liderler-zirvesi.html" class="btn btn-outline btn-small">
+                            <span>Ətraflı</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <svg class="brand-icon" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M15 15L25 25M25 15L15 25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="brand-text">ONE<span class="brand-highlight">YOUTH</span></span>
+                    </div>
+                    <p class="footer-tagline">Gənclərin enerjisi, gələcəyin qüdrəti</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Naviqasiya</h4>
+                        <ul>
+                            <li><a href="index.html">Əsas</a></li>
+                            <li><a href="about.html">Haqqımızda</a></li>
+                            <li><a href="services.html">Xidmətlər</a></li>
+                            <li><a href="events.html">Tədbirlər</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Əlaqə</h4>
+                        <ul>
+                            <li><a href="mailto:info@oneyouth.az">info@oneyouth.az</a></li>
+                            <li><a href="tel:+994501234567">+994 50 123 45 67</a></li>
+                            <li><a href="contact.html">Əlaqə Formu</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Sosial Media</h4>
+                        <ul>
+                            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                            <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
+                            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OneYouth. Bütün hüquqlar qorunur.</p>
+                <p>Made with 💙 in Baku</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
